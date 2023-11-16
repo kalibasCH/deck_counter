@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:backgroundTint="@color/light_gray_blue"
+    android:orientation="vertical"
+    tools:context=".view.FragmentDeckHolder">
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/card_strong_2"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2"
+            />
+
+        <ImageView
+            android:id="@+id/card_strong_3"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+
+        <ImageView
+            android:id="@+id/card_strong_4"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+
+        <ImageView
+            android:id="@+id/card_strong_5"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line1">
+
+        <ImageView
+            android:id="@+id/card_strong_6"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+
+        <ImageView
+            android:id="@+id/card_strong_7"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+
+        <ImageView
+            android:id="@+id/card_strong_8"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+
+        <ImageView
+            android:id="@+id/card_strong_9"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line2">
+
+        <ImageView
+            android:id="@+id/card_strong_10"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+
+        <ImageView
+            android:id="@+id/card_strong_11"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+
+        <ImageView
+            android:id="@+id/card_strong_12"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+
+        <ImageView
+            android:id="@+id/card_strong_13"
+            android:layout_width="50dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/hearts_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line3">
+
+        <ImageView
+            android:id="@+id/card_strong_14"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:src="@drawable/hearts_2"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="80dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/button_delete"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@null"
+            android:src="@drawable/button_delete_40" />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

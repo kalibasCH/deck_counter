@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Счетчик колоды</string>
+    <string name="start">Старт</string>
+    <string name="textNameAppLoadingActivity">СЧЕТЧИК\nКОЛОДЫ</string>
+    <string name="showRunningDeck">Показать текущую колоду</string>
+    <string name="undoLastChange">Отменить последнее удаление</string>
+    <string name="cardsRemainder">Остаток карт в колоде:</string>
+    <string name="newGame">Новая игра</string>
+    <string name="noCardsSelected">Невозможно совершить действие!</string>
+    <string name="cardAlreadyDeleted">Карта уже удалена</string>
+    <string name="cardsIsDeleted">Выбранные карты удалены из колоды!</string>
+    <string name="cancelDeletion">Отменить удаление</string>
+    <string name="previousDeletionCancelled">Предыдущее удаление отменено</string>
+    <string name="deckIs36Card">"Колода из 36 карт"</string>
+    <string name="allCardsIsDeleted">"Все карты этой масти удалены из колоды"</string>
+</resources>

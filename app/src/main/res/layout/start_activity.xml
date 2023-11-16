@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/new_background_main"
+    tools:context=".view.MainMenuActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/button_heart"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_gravity="bottom"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/button_big_heart" />
+
+                <ImageView
+                    android:id="@+id/high_card_hearts"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@null"
+                    />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_gravity="bottom" />
+
+            <FrameLayout
+                android:id="@+id/button_club"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_gravity="bottom"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/button_big_spade" />
+
+                <ImageView
+                    android:id="@+id/high_card_clubs"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@null"  />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_cards_remainder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:text="@string/cardsRemainder"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/first_linear" />
+
+        <TextView
+            android:id="@+id/text_number_cards_in_deck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:gravity="center"
+            android:text="none"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_cards_remainder" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout_second"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <FrameLayout
+                android:id="@+id/button_spade"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_gravity="top"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/button_big_club" />
+
+                <ImageView
+                    android:id="@+id/high_card_spades"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@null" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="125dp"
+                android:layout_gravity="top" />
+
+            <FrameLayout
+                android:id="@+id/button_diamond"
+                android:layout_width="wrap_content"
+                android:layout_height="125dp"
+                android:layout_gravity="top"
+                android:clickable="true"
+                android:focusable="true"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"
+                    android:background="@null"
+                    app:srcCompat="@drawable/button_big_diamond" />
+
+                <ImageView
+                    android:id="@+id/high_card_diamonds"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@null" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/fragment_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

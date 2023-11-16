@@ -1,0 +1,17 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="CustomProgressBar" parent="@android:style/Widget.ProgressBar.Large">
+    </style>
+    <style name="NewTextStyle" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/black</item> <!-- Цвет текста -->
+        <item name="android:textSize">20sp</item> <!-- Размер текста -->
+        <item name="android:textStyle">bold</item> <!-- Стиль текста -->
+    </style>
+
+    <style name="MyButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:textColor">@color/light_gray_blue</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/button_background</item>
+    </style>
+</resources>
